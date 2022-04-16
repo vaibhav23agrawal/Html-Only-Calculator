@@ -1,0 +1,43 @@
+<!-- Author: Vaibhav Agrawal -->
+<!-- Date: 26-12-2021 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator - Only Html</title>
+</head>
+<body>
+    <form action="" name="calculator">
+        <table align="">
+            <caption>Calculator</caption>
+            <tr>
+                <td colspan="4"><input type="text" id="display" disabled></td>
+            </tr>
+            <tr>
+                <td><button type="reset" value="1" onclick="calculator.display.value += '1'">1</button></td>
+                <td><button type="button" value="2" onclick="calculator.display.value += '2'">2</button></td>
+                <td><button type="button" value="3" onclick="calculator.display.value += '3'">3</button></td>
+                <td><button type="button" value="+" onclick="calculator.display.value += '+'">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="4" onclick="calculator.display.value += '4'">4</button></td>
+                <td><button type="button" value="5" onclick="calculator.display.value += '5'">5</button></td>
+                <td><button type="button" value="6" onclick="calculator.display.value += '6'">6</button></td>
+                <td><button type="button" value="-" onclick="calculator.display.value += '-'">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="7" onclick="calculator.display.value += '7'">7</button></td>
+                <td><button type="button" value="8" onclick="calculator.display.value += '8'">8</button></td>
+                <td><button type="button" value="9" onclick="calculator.display.value += '9'">9</button></td>
+                <td><button type="button" value="*" onclick="calculator.display.value += '*'">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="c" onclick="calculator.display.value = ''">C</button></td>
+                <td><button type="button" value="0" onclick="calculator.display.value += '0'">0</button></td>
+                <td><button type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</button></td>
+                <td><button type="button" value="/" onclick="calculator.display.value += '/'">/</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
